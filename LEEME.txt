@@ -1,0 +1,57 @@
+====================================================
+  SURFER WORLD TOUR - Proyecto Godot 4
+====================================================
+
+COMO ABRIR EL JUEGO
+-------------------
+1. Descarga Godot 4 (gratis, ~100 MB): https://godotengine.org/download
+   (elige la version normal, NO la ".NET")
+2. Abre Godot -> boton "Importar" -> selecciona la carpeta
+   "godot-surfer" (este archivo esta dentro de ella).
+3. Presiona F5 (o el boton Play arriba a la derecha) y a surfear.
+
+CONTROLES
+---------
+- Flechas <- ->  : elegir playa en el mapa
+- ENTER          : entrar a la playa
+- ESPACIO / ↑    : saltar
+- <- -> en el aire: trucos (+500 por giro completo)
+- P              : pausa    M : volver al mapa    N : musica on/off
+
+ARCHIVOS QUE DEBES AGREGAR EN LA CARPETA assets/
+------------------------------------------------
+El juego funciona sin ellos (usa graficos dibujados por codigo),
+pero con ellos queda mucho mejor:
+
+1. map.png    -> el mapamundi pixel art (la imagen que generaste).
+                 Guardala como PNG con ese nombre exacto.
+2. music.mp3  -> la cancion retro rock. Copia el mp3 de la carpeta
+                 "juego surf" aqui adentro y renombralo a music.mp3
+
+SPRITES (opcional, para la siguiente version)
+---------------------------------------------
+Si quieres que el surfista use tus sprites animados, guarda cada
+animacion como PNG SEPARADO con FONDO TRANSPARENTE, frames del
+mismo tamano en fila (por ejemplo 5 frames de 32x32 = imagen de
+160x32), con estos nombres:
+
+  assets/surfer_surf.png    (surfeando)
+  assets/surfer_aereo.png   (salto/trucos)
+  assets/obstaculo_tiburon.png, obstaculo_lobo.png, etc.
+
+Luego avisale a Claude cuantos frames tiene cada uno y los conecta.
+
+DONDE SE GUARDA EL PROGRESO
+---------------------------
+Godot lo guarda automaticamente en user://surfer.cfg
+(en Windows: %APPDATA%/Godot/app_userdata/SURFER World Tour/)
+
+ESTRUCTURA DEL PROYECTO
+-----------------------
+  project.godot          -> configuracion (320x180 pixel-perfect)
+  scenes/WorldMap.tscn   -> mapa del mundo (menu principal)
+  scenes/Stage.tscn      -> stage de surf
+  scripts/global.gd      -> datos de las 12 playas, guardado, audio
+  scripts/world_map.gd   -> logica y dibujo del mapa
+  scripts/stage.gd       -> logica y dibujo del juego
+  assets/                -> map.png, music.mp3 y sprites

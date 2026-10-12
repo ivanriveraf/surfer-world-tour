@@ -1,0 +1,26 @@
+# Godot
+.godot/
+*.tmp
+
+# Builds exportados (se publican aparte, no en el repo)
+*.exe
+*.zip
+*.pck
+*.bak
+
+# Herramientas locales
+.claude/
+
+# Musica de terceros (Pixabay): no se redistribuye en el repo
+assets/*.mp3
+assets/*.mp3.import
+
+# Material fuente y documentos internos de planificacion
+assets/fuentes/
+PLAN_DE_MEJORAS.md
+PLAN_JEFES_Y_JUGABILIDAD.md
+PROMPTS_ARTE_JEFES.md
+PEDIDO_DIBUJOS.md
+RESUMEN_DEL_PROYECTO.md
+JEFES.md
+LISTA_DE_SPRITES.md
