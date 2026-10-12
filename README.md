@@ -4,6 +4,8 @@
 
 Juego arcade de surf en 2D, estilo pixel-art, hecho en **Godot 4.6** con **GDScript**. El jugador recorre un tour mundial por **12 playas reales** (Teahupoo, Pipeline, Hossegor, Uluwatu, Mundaka, Supertubos, Arica, Gold Coast, Malé, Punta de Lobos, Taghazout y Corralejo). Cada playa tiene su propia mecánica, sus obstáculos, su música y un jefe final.
 
+### 🎮 [Juega la demo en el navegador (itch.io)](https://ivanriveraf.itch.io/surfer-world-tour)
+
 <p align="center">
   <img src="docs/gameplay.gif" alt="Gameplay de SURFER World Tour en Teahupoo" width="720">
 </p>
